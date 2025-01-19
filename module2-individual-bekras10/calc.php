@@ -28,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else if ($operation == 'addition') {
         $sum = (float)($first + $second);
         printf("<p>You are adding %.2f to %.2f. This results in %.2f.</p>", $second, $first, $sum);
+    } else {
+        echo "<p>This is a four function calculator. Try again.</p>";
     }
 }
 ?>
