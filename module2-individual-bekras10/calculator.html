@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <form action="infoforcalc.php" method="POST">
+        <p>
+            <label for="firstnumberinput">First Number:</label>
+            <input type="text" name="firstnumber" id="firstnumberinput">
+        </p>
+        <p>
+            <label for="secondnumberinput">Second Number:</label>
+            <input type="text" name="secondnumber" id="secondnumberinput">
+        </p>
+        <p>
+            <strong>Operation:</strong>
+            <input type="radio" name="operation" value="addition" id="additioninput"> <label for="additioninput">Addition</label> &nbsp;
+            <input type="radio" name="operation" value="subtraction" id="subtractioninput"> <label for="subtractioninput">Subtraction</label> 
+            <input type="radio" name="operation" value="multiplication" id="multiplicationinput"> <label for="multiplicationinput">Multiplication</label>
+            <input type="radio" name="operation" value="division" id="divisioninput"> <label for="divisioninput">Division</label>  
+        </p>
+        <p>
+            <input type="submit" value="Send">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
